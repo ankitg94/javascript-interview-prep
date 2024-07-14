@@ -1,0 +1,70 @@
+                         
+                         javascript Syllabus
+        
+        
+         chapter - 1
+         1-definition
+         2-variable
+         3-datatype
+         4-operator
+         5-Date,Maths
+         
+         chapter-2
+         1-string
+         2-object
+         3-array
+         4-function
+
+
+         chapter-3
+         1-conditonal(3)
+         2-iterational(5)
+         3-rest & spread operator
+         4-Nullish coeliscing
+
+
+         chapter-4
+         1-callback
+         2-Higher order Function
+         3-Destructuring(array,object)
+
+         chapter-5
+         1-oops
+         
+         chapter-6
+
+         1-Dom
+         2-event listener
+         
+  
+
+        chapter-7
+        1-settimeout
+        2-setinterval
+        3-Asynchronus
+        4-Event loop
+        5-callback hell
+        6-Promises
+        7-Async-await
+        8-try-catch
+        9-hoisting
+        10-closures
+       
+
+        chapter-8
+         1-http cookies
+         2-local stroage
+         3-fetch Api
+        
+        chapter-9
+        1-Debounicing&throatling
+        2-Critical rendering Path 
+        3-function Currying
+        4-generator function
+
+
+        
+
+
+
+         
