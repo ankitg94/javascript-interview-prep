@@ -59,3 +59,36 @@ const removeDuplicate=(str)=>{
     return [...new Set(str)].join('') 
 }
 console.log(removeDuplicate(xyz))
+
+
+//06- find the longest word and smallest one
+const myStr="ashu is the good brother who is very smartthingss much"
+
+const longestFunction=(str)=>{
+    let longest ="";
+    const split = str.split(" ")
+    let smallest =split
+    for(char of split){
+     if(char.length < smallest.length){
+         smallest=char
+     }
+     if(char.length >longest.length){
+          longest  = char;
+     }
+    }
+    return {
+            large: longest, longerlength:longest.length,
+            small:smallest, smallerLength:smallest.length
+        
+    }
+}
+//console.log(longestFunction(myStr))
+//o7 -reverse stirng
+const reversString=(Str)=>{
+ let str ="";  
+for(let i=Str.length;i>=0;i--){
+  str+=Str[i]
+}
+return str
+}
+console.log(reversString(myStr))
