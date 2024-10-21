@@ -1,0 +1,155 @@
+//const num = [1,2,3,4,5,6,7,8,9]
+// //num.push(6)
+// //num.unshift(0)
+// //num.pop()
+// //num.shift()
+// console.log(num)
+// num.splice(3,0,12,23,34)
+// console.log(num)
+// num.splice(1,4)
+// console.log(num.length)
+// console.log(num)
+
+
+// const num = [1,2,3,4,5,6,7,8,9,11,13,17,47,79,77,1,2,3,4]
+//calculate sum
+const calculateSum =(number)=>{
+    let result=0
+    for(let i=0;i<number.length;i++){
+      result+=number[i]
+     }
+    return result
+}
+//console.log(calculateSum(num))
+
+const calculateEven = (number)=>{
+   let result=[]
+   for(let i=0;i<number.length;i++){
+       if(number[i]%2==0){
+           result.push(number[i])
+       }
+   }
+   return result
+}
+//console.log(calculateEven(num))
+
+const isPrime = (number)=>{
+    for(let i=2;i<=number/2;i++){
+        if(number%i==0){
+            return false
+        }
+    }
+    return true
+}
+//calculatePrime 
+const calculatePrime = (n)=>{
+    let result=[]
+    for(let i=0;i<n.length;i++){
+    if(isPrime(n[i])){
+      result.push(n[i])
+  }        
+    }
+    return result
+}
+//console.log(calculatePrime(num))
+//const number=[1,2,3,4,5,6,1,2,3,4,5,6,1,2,3,4,5,6,7,8,9]
+//remove duplicate 
+const removeDuplicate=(num)=>{
+const result =[]
+for(let i=0;i<num.length;i++){
+    if(result.includes(num[i])){
+       continue 
+    }else{
+        result.push(num[i])
+    }
+}
+return result
+}
+
+//console.log(removeDuplicate(number))
+
+//count the frequency of duplicate 
+const CountDuplicate=(num)=>{
+    const result ={}
+    for(let i=0;i<num.length;i++){
+        if(!result[num[i]]){
+            result[num[i]]=1;
+        }
+        else{
+            result[num[i]]++;
+        }
+    }
+    return result
+}
+//console.log(CountDuplicate(number))
+const countUnique = (num)=>{
+    const res=[]
+    const result ={}
+    for(let i=0;i<num.length;i++){
+        if(!result[num[i]]){
+            result[num[i]]=1
+        }
+        else{
+            result[num[i]]++
+        }
+    }
+    for(let keys in result){
+        if(result[keys] === 1){
+            res.push(keys)
+        }
+    }
+    return res
+}
+//console.log(countUnique(number))
+//sorting 
+const Sorting =(num)=>{
+    
+    for(let i=0;i<num.length;i++){
+        for(let j=i;j<num.length;j++){
+            if(num[j]>num[j+1]){
+                const temp=num[j];
+                num[j]=num[j+1];
+                num[j+1]=temp
+            }
+        }
+    }
+    const result=[]
+    for(let i=0;i<num.length;i++){
+     if(result.includes(num[i])){
+        continue
+     }   
+     else{
+         result.push(num[i])
+     }
+    }
+    return result
+}
+//console.log(Sorting(number))
+//highest lowerest ,2nd highest 
+//long method
+const findMax = (num)=>{
+    const len= num.length;
+    for(let i=0;i<num.length;i++){
+        for(let j=i;j<num.length;j++){
+            if(num[j]>num[j+1]){
+                const temp=num[j];
+                num[j]=num[j+1]
+                num[j+1]=temp
+            }
+        }
+    }
+    return {highest:num[len-1],lowerest:num[0]}
+}
+// console.log(findMax(number))
+//shortest method  for finding max and min
+const number =[11,2,40,15,16,7,8,8,9,9]
+const finderMax =(num)=>{
+    let max =num[0]
+    for(let i=1;i<num.length;i++){
+        if(num[i]>max){
+            max=num[i];
+        }
+    }
+    return max
+}
+console.log(finderMax(number))
