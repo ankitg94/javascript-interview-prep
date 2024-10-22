@@ -92,3 +92,20 @@ for(let i=Str.length;i>=0;i--){
 return str
 }
 console.log(reversString(myStr))
+const countVowel=(str)=>{
+   let vowels="aeiou"
+   let count={};
+   for(let i=0;i<str.length;i++){
+       const string =str[i]
+   if(vowels.includes(string)){
+       count[string] = count[string] ? count[string]+1:1;
+   }else{
+       count[string] = count[string] ? count[string]+1:1;
+   } 
+  }  
+  return count
+}
+console.log(countVowel("asklhuyftrdaeiouaaaa"))
+
+
+
