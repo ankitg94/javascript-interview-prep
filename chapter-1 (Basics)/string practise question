@@ -106,6 +106,23 @@ const countVowel=(str)=>{
   return count
 }
 console.log(countVowel("asklhuyftrdaeiouaaaa"))
+const stry="hiy hello how are you whata re you doingwwww ankitgupta"
+const findLongestStr=(str)=>{
+    let longest=""
+    const split =str.split(" ")
+    let smallest =split[0]
+    for(char of split){
+        if(char.length > longest.length){
+            longest=char;
+        }
+        if(char.length < smallest.length){
+            smallest=char;
+        }
+        
+    }
+   return {longest,smallest}  
+}
+console.log(findLongestStr(stry))
 
 
 
