@@ -164,4 +164,35 @@ const reverseArray = (arr) => {
 
 const number = [1, 2, 3, 4, 5]; // Example
 console.log(reverseArray(number)); // Output: [5, 4, 3, 2, 1]
+const num=[1,2,3,6,9,7,18,14,12,12,14]
 
+const kthLaregest=(num,e)=>{
+    for(let i=0;i<num.length;i++){
+        for(let j=i;j<num.length-1;j++){
+            if(num[j]>num[j+1]){
+                const temp =num[j]
+                num[j]=num[j+1]
+                num[j+1]=temp
+            }
+        }
+    }
+    const result=[]
+    
+   for(let keys in num){
+      if(result.includes(num[keys])){
+        continue
+    }
+    else{
+        result.push(num[keys])
+    }
+}
+
+    const len=result.length;
+    console.log(len)
+    return {[`${e} highestNum`]:[result[len-e]],
+          [`${e} lowerestNum`]:[result[e]],
+      total:result}
+}
+console.log(kthLaregest(num,2))
+
+//console.log(result)
