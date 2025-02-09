@@ -5,7 +5,9 @@ with web documents dynamically. It allows you to access elements,
 building interactive and responsive web applications
 */
 /*
-DOM (Document Object Model) in JavaScript refers to the hierarchical representation of HTML or XML documents as a tree structure. It provides a way for programs and scripts to dynamically access and manipulate the content, structure, and style of web documents.
+DOM (Document Object Model) in JavaScript refers to the hierarchical representation of HTML or XML 
+documents as a tree structure. It provides a way for programs and scripts to dynamically access
+ and manipulate the content, structure, and style of web documents.
 
 ### Understanding the DOM
 

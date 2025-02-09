@@ -52,9 +52,13 @@ Debouncing and throttling are two techniques used to control
  */
 //--------------------------------CRP----------------------
 /* 
-The Critical Rendering Path (CRP) is the sequence of steps that the browser takes to render a web page. It involves processing HTML, CSS, and JavaScript to construct the Document Object Model (DOM) and the CSS Object Model (CSSOM), which are then combined to create the Render Tree. The Render Tree is then used to paint the pixels on the screen.
+The Critical Rendering Path (CRP) is the sequence of steps that the browser takes to render a web page.
+ It involves processing HTML, CSS, and JavaScript to construct the Document Object Model (DOM) and 
+ the CSS Object Model (CSSOM), which are then combined to create the Render Tree.
+  The Render Tree is then used to paint the pixels on the screen.
 
-Understanding and optimizing the CRP is crucial for improving web page performance, as it directly affects how quickly a page becomes visible and interactive for users.
+Understanding and optimizing the CRP is crucial for improving web page performance,
+ as it directly affects how quickly a page becomes visible and interactive for users.
 
 ### Key Steps in the Critical Rendering Path:
 

@@ -13,16 +13,16 @@ key points
 2-Executed after an event: It is typically executed after some
  operation has been completed.
 */
-/*
-function hellostu(name,callback){
+
+function hellostu(name,call){
     console.log("hello ! "+name+ " ji")
-    callback()
+    call()
 }
 function callbacky(){
     console.log("we are form the the callback")
 }
 hellostu("ankit",callbacky)
-*/
+
 //higher order function
 /*
 Takes one or more functions as arguments.

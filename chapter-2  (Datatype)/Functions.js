@@ -1,4 +1,4 @@
-/*
+
 function abc(){
    console.log("ankit gupta")
 
@@ -13,7 +13,8 @@ console.log(sum(5,6))
 
 //arrow function 
 let ankitarrow =()=>{
-   console.log("arrow function")
+   let abc="arrow function"
+   return abc;
 }
 console.log(ankitarrow)
 
@@ -29,7 +30,7 @@ console.log(addtwo(4,5))
 (function square(num) {
     console.log(num*num);
 })(5)
-*/
+
 
 
 

@@ -1,17 +1,24 @@
 /*
-Hoisting is a JavaScript mechanism where variables and function declarations are moved to the top of their containing scope during the compilation phase before the code is executed. This means that you can use functions and variables before they are actually declared in the code.
+Hoisting is a JavaScript mechanism where variables and function declarations are
+ moved to the top of their containing scope during the compilation phase before the
+  code is executed. This means that you can use functions and variables before 
+  they are actually declared in the code.
 
 ### How Hoisting Works:
 
 1. **Variable Hoisting:**
    - Variables declared with `var` are hoisted to the top of their function or global scope.
-   - However, only the declaration is hoisted, not the initialization. This means the variable will be `undefined` until the line where it is initialized.
+   - However, only the declaration is hoisted, not the initialization. This means the variable will
+    be `undefined` until the line where it is initialized.
 
 2. **Function Hoisting:**
-   - Function declarations are fully hoisted. This means the entire function can be called before its declaration in the code.
+   - Function declarations are fully hoisted. This means the entire function can be called
+    before its declaration in the code.
 
 3. **Let and Const:**
-   - Variables declared with `let` and `const` are also hoisted but are not initialized. They are in a "temporal dead zone" from the start of the block until the declaration is encountered, which means accessing them before the declaration results in a `ReferenceError`.
+   - Variables declared with `let` and `const` are also hoisted but are not initialized.
+    They are in a "temporal dead zone" from the start of the block until the declaration
+     is encountered, which means accessing them before the declaration results in a `ReferenceError`.
 
 ### Examples:
 
@@ -65,11 +72,16 @@ Understanding hoisting helps prevent errors
 //closures
 
 /*
-Closures are a fundamental concept in JavaScript that allow a function to access variables from an enclosing scope, even after that scope has finished executing. This is possible because functions in JavaScript form closures around the scope in which they were declared.
+Closures are a fundamental concept in JavaScript that allow a function to access variables 
+from an enclosing scope, even after that scope has finished executing.
+ This is possible because functions in JavaScript form 
+ closures around the scope in which they were declared.
 
 ### Explanation:
 
-A closure is created when a function is defined inside another function and the inner function references variables from the outer function. The inner function retains access to the outer function's variables even after the outer function has returned.
+A closure is created when a function is defined inside another function
+ and the inner function references variables from the outer function.
+  The inner function retains access to the outer function's variables even after the outer function has returned.
 
 ### Example:
 

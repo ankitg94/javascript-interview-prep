@@ -23,7 +23,7 @@ the server */
 /*
 a container,used for storing different type of data
 1-variable can be declare by three way 
-(var,let,const,nokeyword)
+(var,let,const,no keyword)
 
 2-scope-lifetime of the variables
 2.1-globalScope 
@@ -38,20 +38,25 @@ function(){
 2.3-blockScope
 {---
 sope
----}ex-let,const
+---}
+ex-let,const
  */
-/*
+
 //Example of(var,let,const)
 var e=12;
 var e=56;      //can be redeclare,can update
-let  c=34
+let  c=34;
 //let c=89     //can't be redeclare,can update
-const d=45
-//const d=23   // can't be redeclare,can't update
-console.log(c)
+c=48;
+const d=45;
+//const d=23   // can't be redeclare,
+//d=56;         //can't update
+
+console.log(e)
+console.log("updated by var ",c)
 console.log(d)
 console.log(e)
-*/
+
 
 
 //[6]-what is data type ?
@@ -62,11 +67,12 @@ Number,
 Bigint,
 string,
 boolean,
-null -      [Standalone value],
+null -  [Standalone value],
 undefined - [declare but not assign],
 symbol
 
 [2]-NonPrimitive(non-trivial)
+
 call by refrence(actual changes)
 Objects, 
 array,
