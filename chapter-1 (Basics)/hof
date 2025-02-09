@@ -1,0 +1,18 @@
+
+Array.prototype.mymap = function(callback){
+     let newArr = [];
+     for(let i=0;i<this.length;i++){
+        newArr.push(callback(this[i], i, this));
+     }
+   return newArr    
+}
+console.log(arr.mymap(i => i * 5)); 
+
+Array.prototype.myfilter = function(cb) {
+    let newArr=[]
+    for(let i=0;i<this.length;i++){
+        if(cb(this[i],i,this)) newArr.push(this[i])
+    }
+    return newArr
+}
+console.log(arr.myfilter(i => i > 5)); 

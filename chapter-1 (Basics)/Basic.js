@@ -8,6 +8,8 @@
   4-promises
   5-Closures
   6-v8engine-chrome(js-engine) 
+  single threadered (one task at the time)
+   synchronous(one pgm after another execute )
 */ 
 
 //[2]-what is nodejs?
