@@ -1,5 +1,5 @@
 const random =((Math.random()+1).toFixed());
-//console.log(random)
+console.log(random)
 
 
 // const myDate = new Date();
