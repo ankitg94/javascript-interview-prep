@@ -6,7 +6,7 @@
   2-synchronus(blocking mode)
   3-dynamically-datatype
   4-promises
-  5-Closures
+  5-Closures (A closure is a function that "remembers" its lexical scope, even when the function is executed outside that scope)
   6-v8engine-chrome(js-engine) 
   single threadered (one task at the time)
    synchronous(one pgm after another execute )
